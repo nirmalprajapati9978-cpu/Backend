@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Node.js backend",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/nirmalprajapati9978-cpu/Backend.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nirmal",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
