@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/nirmalprajapati9978-cpu/Backend/issues"
   },
-  "homepage": "https://github.com/nirmalprajapati9978-cpu/Backend#readme"
+  "homepage": "https://github.com/nirmalprajapati9978-cpu/Backend#readme",
+  "dependencies": {
+    "mongoose": "^9.4.1"
+  }
 }
