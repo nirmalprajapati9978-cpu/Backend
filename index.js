@@ -34,4 +34,4 @@ const server = http.createServer( (req, res) => {
         });
     }
 });
-server.listen(process.env.PORT || 8000, "0.0.0.0" , () => console.log("Server started successfully 🚀"));
+server.listen(process.env.portt || 8000, "0.0.0.0" , () => console.log("Server started successfully 🚀"));
