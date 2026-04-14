@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/nirmalprajapati9978-cpu/Backend#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "mongoose": "^9.4.1"
   }
 }
