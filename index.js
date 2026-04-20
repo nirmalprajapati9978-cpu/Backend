@@ -3,12 +3,12 @@ const mongo = require("mongoose");
 mongo.connect(process.env.mongouri)
 .then(() => console.log("Database connected ✔️ "))
 .catch((err) => console.log(err));
+console.log("New request received", request.url)
 const server = http.createServer( (req, res) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type");
     if (req.url === "/" || req.url === "/index.html"){
-        console.log("New request received");
         const ip = req.headers["x-forwarded-for"]?.split(",")[0] || req.socket.remoteAddress;
         const now = new Date();
         res.end();
