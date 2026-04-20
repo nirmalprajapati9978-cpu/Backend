@@ -11,8 +11,6 @@ const server = http.createServer( (req, res) => {
         console.log("New request received");
         const ip = req.headers["x-forwarded-for"]?.split(",")[0] || req.socket.remoteAddress;
         const now = new Date();
-        fs.appendFile("log.txt", `IP: ${ip} | Date: ${now.toLocaleDateString()} | Time: ${now.toLocaleTimeString()}\n`, (err) => {
-            if (err) throw err; } )
         res.end();
     }else if (req.url === "/login"){
         let body = "";
@@ -34,4 +32,4 @@ const server = http.createServer( (req, res) => {
         });
     }
 });
-server.listen(process.env.portt || 8000, "0.0.0.0" , () => console.log("Server started successfully 🚀"));
+server.listen(process.env.PORT || 8000, "0.0.0.0" , () => console.log("Server started successfully 🚀"));
