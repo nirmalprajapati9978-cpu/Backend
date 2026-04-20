@@ -3,8 +3,8 @@ const mongo = require("mongoose");
 mongo.connect(process.env.mongouri)
 .then(() => console.log("Database connected ✔️ "))
 .catch((err) => console.log(err));
-console.log("New request received", req.url)
 const server = http.createServer( (req, res) => {
+    console.log("New request received", req.url);
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET, POST");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type");
