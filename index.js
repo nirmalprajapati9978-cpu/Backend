@@ -1,6 +1,6 @@
 const http = require("http");
 const mongo = require("mongoose");
-mongo.connect(process.env.mongouri)
+mongo.connect(process.env.mongouri, dbName= "MyDatabase")
 .then(() => console.log("Database connected ✔️ "))
 .catch((err) => console.log(err));
 const server = http.createServer( (req, res) => {
